@@ -1,6 +1,7 @@
 ---
   title: May Surf Report
-  slug: may
+  published: true
+  date: 2022-05-01
 ---
 
 # {title}

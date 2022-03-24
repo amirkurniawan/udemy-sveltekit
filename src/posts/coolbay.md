@@ -1,6 +1,7 @@
 ---
   title: Cool Bay
   slug: coolbay
+  published: true
 ---
 
 # {title}

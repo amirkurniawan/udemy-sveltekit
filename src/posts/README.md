@@ -1,6 +1,7 @@
 ---
   title: SVELTE README
-  slug: README
+  published: false
+  date: 2022-01-01
 ---
 
 # {title}
