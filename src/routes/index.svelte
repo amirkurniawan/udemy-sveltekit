@@ -1,24 +1,12 @@
-<h1>Welcome to SurfSpots</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
-<p>Long Stuff</p>
+<script>
+    import Posts from '$lib/posts.svelte'
+  </script>
+  
+  <h1>Welcome to SurfSpots</h1>
+  
+  <h3><a href="/about" sveltekit:prefetch>Read all about us here!</a></h3>
+  
+  <h3>Check Out Epic Surf Spots</h3>
+  
+  <Posts />
+  

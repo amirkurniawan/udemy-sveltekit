@@ -1,9 +1,8 @@
 <script context="module">
-  export async function load() {
-    const posts = import.meta.globEager('../../posts/*.md');
-    const postsMeta = Object.values(posts).map(post => post.metadata);
+  import getPostsMeta from "$lib/getPostsMeta";
 
-    return { props: { postsMeta }}
+  export async function load() {
+    return { props: { postsMeta: getPostsMeta() }}
   }
 </script>
 

@@ -1,4 +1,7 @@
-<h1>
+<script>
+  import Posts from '$lib/posts.svelte';
+</script>
 
-    POST IN POSTS
-</h1>
+<h1>Surf Spot Articles</h1>
+
+<Posts />
