@@ -1,4 +1,15 @@
+<!-- untuk transisi -->
+<script context="module">
+  export async function load({ page }) {
+    const isPostsPage = page.path.substring(0, 6) === '/posts';
+    return { props: { key: isPostsPage ? '' : page.path }}
+  }
+</script>
+
 <script>
+  import PageTransition from '$lib/page-transition.svelte';
+  export let key;
+
   import Header from '$lib/header.svelte';
   import Footer from '$lib/footer.svelte';
 </script>
@@ -6,7 +17,9 @@
 <Header title="Amir" />
 
 <main>
+  <PageTransition refresh={key}>
   <slot />
+</PageTransition>
 </main>
 
 <Footer />

@@ -14,12 +14,14 @@
   </script>
   
   <script>
+    import PageTransition from "$lib/page-transition.svelte";
     export let date;
-    export let Post;
-    export let published;
+  export let Post;
+  export let published;
+  export let slug;
   </script>
   
-  
+  <PageTransition refresh={slug}>
   {#if !published}
     <h1>Post is Private</h1>
   {:else}
@@ -33,3 +35,4 @@
   
     <svelte:component this={Post} />
   {/if}
+</PageTransition>

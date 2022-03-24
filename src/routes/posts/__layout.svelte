@@ -7,6 +7,7 @@
 </script>
 
 <script>
+  import PageTransition from "$lib/page-transition.svelte";
   export let postsMeta;
 </script>
 
@@ -14,6 +15,7 @@
   <content>
     <slot />
   </content>
+<PageTransition>
   <article>
     <h3>Latest 5 Posts</h3>
     <ui>
@@ -22,6 +24,7 @@
       {/each}
     </ui>
   </article>
+</PageTransition>
 </div>
 
 <style lang="scss">
