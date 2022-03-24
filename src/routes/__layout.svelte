@@ -1,19 +1,15 @@
 <script>
-    import Header from "../lib/header.svelte";
-    import Footer from "../lib/footer.svelte";
-
-  
+  import Header from '$lib/header.svelte';
+  import Footer from '$lib/footer.svelte';
 </script>
 
-<Header title="amir"/>
+<Header title="Amir" />
 
 <main>
   <slot />
 </main>
 
-<Footer/>
-
-
+<Footer />
 
 <style lang="scss">
   :global {
@@ -42,14 +38,10 @@
     }
   }
 
-  
-
   main {
     background-color: blanchedalmond;
     flex: 1;
     padding: 15px;
     overflow-y: auto;
   }
-
-  
 </style>
