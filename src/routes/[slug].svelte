@@ -1,3 +1,0 @@
-<h1>
-    ARE U SURE ABOUT THIS PATH DUDEE?
-</h1>
