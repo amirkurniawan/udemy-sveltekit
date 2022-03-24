@@ -1,10 +1,11 @@
 <script>
     import getPostsMeta from './getPostsMeta'
     import { onMount } from 'svelte';
+    export let count = 0;
     let postsMeta;
   
     onMount(async function() {
-      postsMeta = getPostsMeta();
+      postsMeta = getPostsMeta(count);
     })
   </script>
   

@@ -34,7 +34,14 @@
     }
 
     a {
+      color: purple;
+      font-weight: bold;
       text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 

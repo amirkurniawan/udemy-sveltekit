@@ -4,4 +4,5 @@
 
 <h1>Surf Spot Articles</h1>
 
-<Posts />
+<!-- <Posts count={1} /> -->
+<Posts/>

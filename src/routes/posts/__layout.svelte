@@ -2,7 +2,7 @@
   import getPostsMeta from "$lib/getPostsMeta";
 
   export async function load() {
-    return { props: { postsMeta: getPostsMeta() }}
+    return { props: { postsMeta: getPostsMeta(5) }}
   }
 </script>
 
@@ -15,7 +15,7 @@
     <slot />
   </content>
   <article>
-    <h3>Archives</h3>
+    <h3>Latest 5 Posts</h3>
     <ui>
       {#each postsMeta as post}
         <li><a href="/posts/{post.slug}">{post.title}</a></li>
@@ -47,16 +47,6 @@
 
         li {
           margin: 10px 0;
-
-          a {
-            color: purple;
-            font-weight: bold;
-            transition: 0.2s;
-
-            &:hover {
-              opacity: 0.6;
-            }
-          }
         }
       }
     }
